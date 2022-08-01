@@ -57,7 +57,7 @@ app.delete('/task/:id', (req,res) =>{
 // Db Connection
 const start = async () => {
   try {
-    await mongoose.connect("mongodb+srv://sarthakChy:Saru2314@nodeexpress.2dq6x.mongodb.net/Tasks?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+    await mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
     app.listen(port, () =>
       console.log(`Server is listening on port ${port}...`)
     );
