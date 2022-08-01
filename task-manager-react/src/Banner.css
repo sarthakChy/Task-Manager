@@ -1,0 +1,15 @@
+
+.banner__container{
+  height: 250px;
+  width: 100vw;
+  box-sizing: content-box;
+  overflow: hidden;
+  z-index: -1;
+
+}
+.banner{
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  object-position: left;
+}
